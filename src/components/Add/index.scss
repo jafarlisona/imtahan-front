@@ -1,0 +1,34 @@
+#de{
+    padding: 100px 0;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        .table{
+            .btns{
+                display: flex;
+                gap: 10px;
+                button{
+                    border: none;
+                    transition: all 300ms;
+                    background-color: white;
+                    color: #808080;
+                    padding: 25px 20px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    &:hover{
+                        background-color: #FFB400;
+                        color: #404040;
+                    }
+                }
+            }
+            table,th,td{
+                border: 1px solid #FFB400;
+                border-collapse: collapse;
+                padding: 10px;
+                thead{
+                    background-color: #FFB400;
+                    color: white;
+                }
+            }
+        }
+    }
+}

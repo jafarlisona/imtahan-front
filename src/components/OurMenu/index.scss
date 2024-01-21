@@ -1,0 +1,109 @@
+#menu {
+  background-color: #fafafa;
+  padding: 80px 0;
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    h4 {
+      color: #808080;
+      letter-spacing: 2.5px;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+    }
+    h1 {
+      color: #404044;
+      font-weight: 400;
+      font-size: 32px;
+      text-align: center;
+    }
+    .btns {
+      display: flex;
+      gap: 10px;
+      margin: 50px 0 20px;
+      button {
+        border: none;
+        transition: all 300ms;
+        background-color: white;
+        color: #808080;
+        padding: 25px 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        &:hover {
+          background-color: #ffb400;
+          color: #404044;
+        }
+      }
+    }
+    .cards {
+      display: grid;
+      column-gap: 30px;
+      row-gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      .card {
+        display: flex;
+        width: 100%;
+        min-height: 100px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #fff;
+        align-items: start;
+        padding: 15px;
+        gap: 15px;
+        .img {
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+          }
+        }
+        .text {
+          flex-grow: 2;
+          h3 {
+            color: #404044;
+            font-size: 18px;
+            font-weight: 400;
+          }
+          p {
+            color: #808080;
+            font-size: 15px;
+          }
+        }
+        .price {
+          span {
+            color: #404044;
+            font-size: 28px;
+          }
+          .icons {
+            i {
+              font-size: 18px;
+            }
+          }
+          .fa-heart {
+            color: red;
+          }
+       
+          .fa-eye {
+            color: #808080;
+            &:hover {
+              color: #1a6cbd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px)  and (min-width:300px){
+ #menu{
+  padding: 80px 20px;
+  .container{
+    .cards{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+ }
+}
